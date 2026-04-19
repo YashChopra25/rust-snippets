@@ -1,0 +1,13 @@
+cargo install cargo-modules
+ -> cargo modules struture --lib(file_name). 
+        output: from the package_and_crated/auth_service
+                crate auth_service
+                ├── mod auth_utils: pub
+                │   ├── fn get_user: pub(self)
+                │   ├── fn login: pub
+                │   └── mod models: pub
+                │       └── struct Credentials: pub
+                ├── fn authenticate: pub
+                └── mod database: pub(crate)
+                    ├── enum Status: pub
+    

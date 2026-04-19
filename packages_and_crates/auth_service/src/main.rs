@@ -1,5 +1,5 @@
+use auth_service::auth_utils::models::Credentials;
 use auth_service::authenticate;
-use auth_service::Credentials
 
 fn main() {
     println!("Hello, world!");
@@ -7,7 +7,6 @@ fn main() {
         username: String::from("yashh"),
         password: String::from("abcd"),
     };
-
     // println!("This line is :{:#?}", cred);
     authenticate(cred)
 }
